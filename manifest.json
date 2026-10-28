@@ -1,0 +1,31 @@
+{
+  "project": "河南工伤政策知识库",
+  "version": "1.0.1",
+  "updated": "2026-10-28",
+  "counts": {
+    "cards": 38,
+    "originals": 54,
+    "texts": 43,
+    "substantive_texts": 42,
+    "retrieval_pool": 41,
+    "internal_questions": 100,
+    "heldout_questions": 30
+  },
+  "b_test": {
+    "documents": 40,
+    "note": "B 组跑的是 40 份实质条文（不含 00_清单）；新增 C22/E6 后为 42 份，未重跑。"
+  },
+  "model_env": {
+    "tool": "Cherry Studio 2.1.8",
+    "model": "DeepSeek v4.1 flash 1017",
+    "embedding": "bge-m3",
+    "rerank": "off",
+    "top_k": 8,
+    "temperature": 0.2
+  },
+  "known_issues": [
+    "100P 为内部验收，不是外部准确率",
+    "B 组未用新增 C22/E6 重跑",
+    "C 组输出仍可能出现 [cite:...]，需 clean_output.py 兜底"
+  ]
+}

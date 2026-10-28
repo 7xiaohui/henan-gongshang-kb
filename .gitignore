@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 脚本产物
+out/
+*.log
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 本地临时
+~$*
